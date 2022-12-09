@@ -24,4 +24,5 @@ while (a <= 'z')
 }
 }
 putchar('\n');
+return (0);
 }
