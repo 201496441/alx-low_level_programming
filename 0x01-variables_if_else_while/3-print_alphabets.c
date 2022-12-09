@@ -12,20 +12,18 @@
  */
 
 int main(void)
-{
-char a;
-char B;
-B = 'A';     
+{char a, b;
 a = 'a';
+B = 'A';
 while (a <= 'z')
 {
 putchar(a);
 a++;
 }
-while (B <= 'Z')
+while (b <= 'Z')
 {
-putchar(B);
-B++;
+putchar(b);
+b++;
 }
 putchar('\n');
 return (0);
