@@ -1,6 +1,7 @@
 #include <stdlib.h>
 #include <stdio.h>
 #include <time.h>
+
 /* more headers goes there */
 
 /* betty style doc for function main goes there */
@@ -27,7 +28,6 @@ putchar(B);
 B++;
 }
 putchar('\n');
-
 return (0);
 }
 
