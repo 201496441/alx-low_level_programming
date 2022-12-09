@@ -10,10 +10,12 @@
 /* betty style doc for function main goes there */
 
 int main(void)
-{char c;
-c='a';
-while (c <= 'z'){
-if (( c != 'q' && c != 'e') && c <= 'z')
+{
+char c;
+c = 'a';
+while (c <= 'z')
+{
+if ((c != 'q' && c != 'e') && c <= 'z')
 putchar(c);
 c++;
 }
