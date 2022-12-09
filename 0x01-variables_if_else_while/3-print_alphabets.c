@@ -24,9 +24,8 @@ a++;
 while (B <= 'Z')
 {
 putchar(B);
-a++;
+B++;
 }
-
 putchar('\n');
 
 return (0);
