@@ -30,4 +30,3 @@ B++;
 putchar('\n');
 return (0);
 }
-
