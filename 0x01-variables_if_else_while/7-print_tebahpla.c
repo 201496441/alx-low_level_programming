@@ -13,8 +13,8 @@
 int main(void)
 {
 char a;
-a = 'a';
-while (a <= 'z')
+a = 'z';
+while (a <= 'a')
 {
 putchar(a);
 a--;
