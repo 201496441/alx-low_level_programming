@@ -2,32 +2,37 @@
 #include <stdlib.h>
 
 /**
- * main -  prints all possible different combinations of three digits.
- * Return: Always 0 (Success)
+ * main - returns a combination of number
+ * Return: return 0 if successful
  */
 
 int main(void)
 {
-int ones = '0';
-int tens = '0';
-int hundreds = '0';
-for (hundreds = '0'; hundreds <= '9'; hundreds++)
+int c;
+int d;
+int e = 0;
+while (e < 10)
 {
-for (tens = '0'; tens <= '9'; tens++)
+d = 0;
+while (d < 10)
+c = 0;
+while (c < 10)
 {
-for (ones = '0'; ones <= '9'; ones++)
+if (c != d && d != e && e < d && d < c)
 {
-if (!((ones == tens) || (tens == hundreds) ||
-(tens > ones) || (hundreds > tens)))
-putchar(tens);
-putchar(ones);
-if (!(ones == '9' && hundreds == '7' && tens == '8'))
+putchar('o' + e);
+putchar('o' + d);
+putchar('o' + c);
+if (c + d + e != 7 + 8 + 9)
 {
 putchar(',');
 putchar(' ');
 }
+c++;
 }
+d++;
 }
+e++;
 }
 putchar('\n');
 return (0);
