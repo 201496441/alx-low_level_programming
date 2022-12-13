@@ -4,10 +4,10 @@
  *
  * Return: 0
  */
-void print_alphabet(void) /** print function print_alphabet Entry point */
+void print_alphabet(void)
 {
 char a = 'a';
-for (int i =0; i <= 10; i++)
+for (int i = 0; i <= 10; i++)
 {
 while (a <= 'z')
 {
@@ -16,7 +16,4 @@ a++;
 }
 }
 _putchar('\n');
-
 }
-
-
