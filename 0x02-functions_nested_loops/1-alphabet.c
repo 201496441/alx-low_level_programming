@@ -1,12 +1,10 @@
 #include "main.h"
-
 /**
- * main - check the code
+ * print_alphabet - entry point
  *
- * Description: print alphabet
- * Return: Always 0.
+ * Return: 0
  */
-void print_alphabet(void)
+void print_alphabet(void) /** print function print_alphabet Entry point */
 {
 char a = 'a';
 while (a <= 'z')
