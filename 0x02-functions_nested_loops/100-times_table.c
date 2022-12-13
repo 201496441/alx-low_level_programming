@@ -7,7 +7,7 @@
  * Return: Number matrix
  */
 void print_times_table(int n)
-{ 
+{
 	int x, y, z;
 
 	if (n >= 0 && n <= 14)
@@ -47,5 +47,5 @@ void print_times_table(int n)
 			}
 			_putchar('\n');
 		}
-}
+	}
 }	
