@@ -16,9 +16,9 @@ half = length / 2;
 i = 0;
 while (half--)
 {
-temp = s[length - i - 1]
+temp = s[length - i - 1];
 s[length - i - 1] = s[i];
-s[i] = temp
+s[i] = temp;
 i++;
 }
 }
