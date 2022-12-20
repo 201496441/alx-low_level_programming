@@ -16,7 +16,7 @@ while (s[index] != '\0')
 int j = 0;
 for (j = index - 1; j >= index; j--)
 {
-_putchar(str[index]);
+_putchar(s[index]);
 }
 _putchar('\n');
 }
