@@ -2,7 +2,7 @@
 #include <stdio.h>
 void puts2(char *str)
 {
-	int i
+	int i;
 	while (str[i] != '\0')
 	{
 	   if (i % 2==0)
