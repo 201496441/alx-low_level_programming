@@ -4,19 +4,19 @@
  * print_rev - This function prints a string in reverse order
  * @s: pointer parameter
  */
+
 void print_rev(char *s)
 {
-int j;
+	int i = 0;
+	int j;
 
-int index = 0;
-
-while (s[index] != '\0')
-{
-	index++;
-}
-for (j = index - 1; j >= index; j--)
-{
-_putchar(s[j]);
-}
-_putchar('\n');
+	while (s[i] != '\0')
+	{
+		i++;
+	}
+	for (j = i - 1; j >= 0; j--)
+	{
+		_putchar(s[j]);
+	}
+	_putchar('\n');
 }
