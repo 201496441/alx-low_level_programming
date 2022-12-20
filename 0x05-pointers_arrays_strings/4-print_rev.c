@@ -13,7 +13,7 @@ while (s[index] != '\0')
 {
 	index++;
 }
-int j = 0;
+int j;
 for (j = index - 1; j >= index; j--)
 {
 _putchar(s[index]);
