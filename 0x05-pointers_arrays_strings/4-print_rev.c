@@ -6,6 +6,7 @@
  */
 void print_rev(char *s)
 {
+int j;
 
 int index = 0;
 
@@ -13,7 +14,6 @@ while (s[index] != '\0')
 {
 	index++;
 }
-int j;
 for (j = index - 1; j >= index; j--)
 {
 _putchar(s[index]);
