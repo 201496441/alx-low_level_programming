@@ -7,18 +7,6 @@
  */
 int _pow_recursion(int x, int y)
 {
-<<<<<<< HEAD
-if (y < 0)
-{
-	return (-1);
-}
-if (y == 0)
-{
-	return (1);
-}
-return (x * (_pow_recursion(x, y + 1)));
-}
-=======
 	if (y < 0)
 		return (-1);
 	if (y == 0)
@@ -26,4 +14,3 @@ return (x * (_pow_recursion(x, y + 1)));
 
 	return (x * (_pow_recursion(x, y - 1)));
 }
->>>>>>> 4b3e0fc2091d8bdc63af075f846cf5752c7334a5
