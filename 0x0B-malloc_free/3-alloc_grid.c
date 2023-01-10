@@ -1,69 +1,42 @@
 #include "main.h"
 /**
- *_strlen - count array
- *@s: array of elements
- *Return: 1
+ * alloc_grid - allocates a grid, make space and free space
+ * @width: takes in width of grid
+ * @height: height of grid
+ * Return: grid with freed spaces
  */
 
-int _strlen(char *s)
+int **alloc_grid(int width, int height)
 {
-	unsigned int i;
+	int **grid;
+	int i, j;
 
-	i = 0;
-	while (s[i] != '\0') /*count character of string*/
-	{
-		i++;
-	}
-
-	return (i);
-}
-
-/**
- *_strcpy - copy arrays
- *@src: array of elements
- *@dest: dest array
- *Return: dest
- */
-
-char *_strcpy(char *dest, char *src)
-{
-	int i = 0;
-
-	while (src[i] != '\0')
-	{
-		dest[i] = src[i];
-		i++;
-	}
-	dest[i] = '\0';
-
-	return (dest);
-}
-
-/**
- *_strdup - array for prints a string
- *@str: array of elements
- *Return: pointer
- */
-
-char *_strdup(char *str)
-{
-	char *dst;
-	unsigned int size;
-
-	if (str == 0)
+	if (width <= 0 || height <= 0)
 	{
 		return (NULL);
 	}
 
-	size = _strlen(str) + 1;
+	grid = malloc(sizeof(int *) * height);
 
-	dst = (char *) malloc(size * sizeof(char));
-
-	if (dst == 0)
+	if (grid == NULL)
 	{
 		return (NULL);
 	}
 
-	_strcpy(dst, str);
-	return (dst);
+	for (i = 0; i < height; i++)
+	{
+		grid[i] = malloc(sizeof(int) * width);
+		if (grid[i] == NULL)
+		{
+			for (i = i - 1; i >= 0; i--)
+			{
+				free(grid[i]);
+			}
+		free(grid);
+		return (NULL);
+		}
+	}
+	for (i = 0; j < width; j++)
+	grid[i][j] = 0;
+	return (grid);
 }
