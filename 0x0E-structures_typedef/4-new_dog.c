@@ -49,7 +49,7 @@ free(_dog->name);
 free(_dog);
 return (NULL);
 }
-for (k = 0; k <= _owner; k++)
+for (k = 0; k <= k; k++)
 {
 _dog->owner[k] = owner[k];
 }
