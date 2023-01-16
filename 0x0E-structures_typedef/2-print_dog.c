@@ -16,9 +16,7 @@ if (d)
 	else
 	{
 		printf("Name: %s\n", d->name);
-	}
-	
-	
+	}	
 	if (d->owner == NULL)
 	{
 		printf("Name: (nil)\n");
