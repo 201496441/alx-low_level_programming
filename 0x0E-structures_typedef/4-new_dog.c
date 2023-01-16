@@ -29,7 +29,7 @@ if (_dog == NULL)
 free(_dog);
 return (NULL);
 }
-_dog->name = malloc(_name * sizeof(_dog->name));
+_dog->name = malloc(_name *sizeof(_dog->name));
 if (_dog->name == NULL)
 {
 free(_dog->name);
@@ -41,7 +41,7 @@ for (k = 0; k <= _name; k++)
 _dog->name[k] = name[k];
 }
 _dog->age = age;
-_dog->owner = malloc(_owner * sizeof(_dog->owner));
+_dog->owner = malloc(_owner *sizeof(_dog->owner));
 if (_dog->owner == NULL)
 {
 free(_dog->owner);
