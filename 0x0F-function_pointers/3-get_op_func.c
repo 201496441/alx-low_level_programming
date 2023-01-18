@@ -11,15 +11,14 @@ int (*get_op_func(char *s))(int, int)
 		{NULL, NULL}
 	};
 	int i;
-	
-	i=0;
-	
-	while(ops[i].op)
-	{
-	if (stpcpy(ops[i]), s) == 0))
-	{
-		return (ops[i].op);
-		i++;
-	}
-	return NULL;
+
+i = 0;
+while (ops[i].op)
+{
+if (stpcpy(ops[i], s) == 0)
+{
+return (ops[i].op);
+i++;
+}
+return (NULL);
 }
