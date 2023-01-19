@@ -19,7 +19,7 @@ unsigned int i;
 
 int sum;
 
-va_start(op ,n);
+va_start(op, n);
 for (i = 0; i < n; i++)
 {
 sum += va_arg(op, int);
