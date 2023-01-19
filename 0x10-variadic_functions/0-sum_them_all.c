@@ -14,9 +14,12 @@ int sum_them_all(const unsigned int n, ...)
 		return (0);
 	}
 	va_list op;
+	
 	unsigned int i;
+	
 	int sum;
-	va_start(op,n);
+	
+	va_start(op ,n);
 	for (i = 0; i < n; i++)
 	{
 		sum += va_arg(op, int);
