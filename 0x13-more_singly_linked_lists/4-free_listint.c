@@ -1,4 +1,5 @@
 #include "lists.h"
+#include <stdlib.h>
 /**
  * free_listint - frees a linked list
  * @head: pointer to the 1st node of the linked list to be freed
